@@ -4,7 +4,7 @@ let yellowLine = document.querySelector('.yellow-line');
 let navLink = document.querySelectorAll('nav ul li a');
 let header = document.querySelector('header');
 let body = document.querySelector('body');
-let seeWorkBtn = document.querySelector('#see-my-work');
+let seeWorkBtn = document.querySelector('#seeWorkBtn');
 let portfolio = document.querySelector('.portfolio')
 let splash = document.querySelector('.splash');
 
@@ -25,7 +25,7 @@ navLink.forEach(element => {
     element.addEventListener('click', ()=> {
         navMenu.classList.remove('nav-open');
         yellowLine.classList.remove('yellow-line-shift');
-        body.classList.toggle('overflow-hidden');
+        body.classList.remove('overflow-hidden');
     })
 });
 
