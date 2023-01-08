@@ -6,7 +6,12 @@ let header = document.querySelector('header');
 let body = document.querySelector('body');
 let seeWorkBtn = document.querySelector('#see-my-work');
 let portfolio = document.querySelector('.portfolio')
-let splash = document.querySelector('splash');
+let splash = document.querySelector('.splash');
+
+window.addEventListener('load', ()=> {
+    console.log('done');
+    splash.style.display = 'none';
+});
 
 menuBtn.addEventListener('click', menuOpen);
 
