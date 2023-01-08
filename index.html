@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="style/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="script/main.js" defer></script>
+    <script src="lightbox/simple-lightbox.min.js"></script>
+    <link rel="stylesheet" href="lightbox/simple-lightbox.min.css">
     <title>Dixel Space</title>
 </head>
 <body>
+    <div class="splash">
+        <h1>Loading</h1>
+    </div>
     <div class="container">
         <header class="padding-block-100">
             <div class="logo-wrapper">
@@ -25,7 +30,7 @@
             <nav class="padding-block-500 padding-inline-200">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -53,7 +58,7 @@
                 <h1>I’m Asanka.</h1>
                 <h3>Graphic / Web Designer</h3>
                 <br>
-                <button class="primary-button">See My Work</button>
+                <button class="primary-button" id="see-my-work">See My Work</button>
             </div>
             <div class="arrow-wrapper">
                 <img src="images/assets/dotted-line.svg" alt="" class="dotted-line">
@@ -61,15 +66,37 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio padding-block-200" id="portfolio">
         <div class="container">
             <div class="gallery">
-                <a href="images/image1.jpg"><img src="images/thumbs/thumb1.jpg" alt="" title=""/></a>
-                <a href="images/image2.jpg"><img src="images/thumbs/thumb2.jpg" alt="" title="Beautiful Image"/></a>
+                <div class="img-box">
+                    <a href="images/001.jpg"><img src="images/001.jpg" alt="" title=""/></a>
+                </div>
+                <div class="img-box">
+                    <a href="images/002.jpg"><img src="images/002.jpg" alt="" title=""/></a>
+                </div>
+                <div class="img-box">
+                    <a href="images/003.jpg"><img src="images/003.jpg" alt="" title=""/></a>
+                </div>
+                <div class="img-box">
+                    <a href="images/004.jpg"><img src="images/004.jpg" alt="" title=""/></a>
+                </div>
+                <div class="img-box">
+                    <a href="images/005.jpg"><img src="images/005.jpg" alt="" title=""/></a>
+                </div>
+                <div class="img-box">
+                    <a href="images/006.jpg"><img src="images/006.jpg" alt="" title=""/></a>
+                </div>
+                <div class="img-box">
+                    <a href="images/007.jpg"><img src="images/007.jpg" alt="" title=""/></a>
+                </div>
+                <div class="img-box">
+                    <a href="images/008.jpg"><img src="images/008.jpg" alt="" title=""/></a>
+                </div>
             </div>
         </div>
     </section>
-    <footer class="padding-block-200">
+    <footer class="padding-block-100">
         <div class="container">
             <p class="footer-text">
                 &copy; 2023. All Right Reserved.
