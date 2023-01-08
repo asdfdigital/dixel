@@ -7,6 +7,8 @@ let body = document.querySelector('body');
 let seeWorkBtn = document.querySelector('#seeWorkBtn');
 let portfolio = document.querySelector('.portfolio')
 let splash = document.querySelector('.splash');
+let toggleBtn = document.querySelector('.dark-mode-toggle');
+let toggleHandle = document.querySelector('.toggler')
 
 window.addEventListener('load', ()=> {
     console.log('done');
@@ -28,6 +30,10 @@ navLink.forEach(element => {
         body.classList.remove('overflow-hidden');
     })
 });
+
+toggleBtn.addEventListener('click', ()=> {
+    toggleHandle.classList.toggle('toggle-on');
+})
 
 seeWorkBtn.addEventListener('click', ()=> {
     portfolio.scrollIntoView();
