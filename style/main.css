@@ -95,6 +95,7 @@ a:visited {
     .container {
         max-width: 1280px;
         margin: auto;
+        padding-inline: 0;
     }
 }
 
@@ -464,6 +465,9 @@ section.main {
     .main-heading h1 {
         font-size: 7rem;
         line-height: 6rem;
+    }
+    .primary-button {
+        font-size: 2rem;
     }
 }
 
