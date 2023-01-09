@@ -8,11 +8,16 @@ let seeWorkBtn = document.querySelector('#seeWorkBtn');
 let portfolio = document.querySelector('.portfolio')
 let splash = document.querySelector('.splash');
 let toggleBtn = document.querySelector('.dark-mode-toggle');
-let toggleHandle = document.querySelector('.toggler')
+let toggleHandle = document.querySelector('.toggler');
+let animationClass = document.querySelectorAll('.animate')
 
 window.addEventListener('load', ()=> {
     console.log('done');
     splash.style.display = 'none';
+    animationClass.forEach(element => {
+        element.classList.add('animation-start');
+    });
+    
 });
 
 menuBtn.addEventListener('click', menuOpen);
@@ -47,6 +52,13 @@ window.addEventListener('scroll', (e)=> {
     }
 })
 
+// const observer = new IntersectionObserver(entries => {
+//     entries.forEach(entry => {
+//         console.log('observed')
+//     });
+//   })
+
+// observer.observe(document.querySelector('.animate'))
 
 
 

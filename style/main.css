@@ -78,7 +78,7 @@ a:visited {
     padding-inline: var(--size-900);
 }
 
-@media (min-width: 50em) {
+@media (min-width: 768px) {
     .padding-block-100 {
         padding-block: calc(var(--size-100) + 5px);
     }
@@ -91,9 +91,17 @@ a:visited {
     margin: auto;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 768px) {
     .container {
-        max-width: 1280px;
+        max-width: 760px;
+        margin: auto;
+        padding-inline: 0;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1270px;
         margin: auto;
         padding-inline: 0;
     }
@@ -284,9 +292,9 @@ nav ul li a:hover::after {
     font-size: 0.8rem;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 768px) {
     .header-container {
-        max-width: 1280px;
+        max-width: 760px;
         padding: 0;
         margin: auto;
     }
@@ -317,6 +325,12 @@ nav ul li a:hover::after {
         display: flex;
         gap: 0.5rem;
         position: static;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header-container {
+        max-width: 1270px;
     }
 }
 
@@ -410,6 +424,39 @@ section.main {
     box-shadow: 1px 2px 20px #FFCAAD;
 }
 
+@keyframes title-move-in {
+    from {
+        margin-left: -50px;
+        opacity: 0;
+        
+    }
+    to {
+        margin-left: 0;
+        opacity: 1;
+        
+    }
+}
+
+.animate {
+    animation: title-move-in 0.8s 0.1s ease-in paused;
+}
+
+.animation-start {
+    animation-play-state: running;
+}
+
+.duration-3 {
+    animation-duration: 0.3s;
+}
+
+.duration-6 {
+    animation-duration: 0.6s;
+}
+
+.duration-9 {
+    animation-duration: 0.9s;
+}
+
 .arrow-wrapper {
     width: 100%;
     display: flex;
@@ -428,7 +475,7 @@ section.main {
     animation: arrow 2s ease-out infinite alternate;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 768px) {
     section.main .container {
         display: grid;
         grid-template-columns: 2fr 1fr;
@@ -513,7 +560,7 @@ section.portfolio {
     width: 170%;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 768px) {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
         padding-block: var(--size-200);
@@ -533,7 +580,7 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 50em) {
+@media (min-width: 768px) {
     .footer-text {
         padding-block: var(--size-100);
     }    
