@@ -580,6 +580,12 @@ footer {
     text-align: center;
 }
 
+.footer-text {
+    letter-spacing: 0.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
 @media (min-width: 768px) {
     .footer-text {
         padding-block: var(--size-100);
