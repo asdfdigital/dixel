@@ -463,11 +463,11 @@ section.main {
         line-height: 2.2rem;
     }
     .main-heading h1 {
-        font-size: 7rem;
+        font-size: 8rem;
         line-height: 6rem;
     }
     .primary-button {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 }
 
@@ -485,6 +485,7 @@ section.main {
 section.portfolio {
     background-color: var(--color-grey-light);
     min-height: 85vh;
+    scroll-margin-block: 7.5rem;
 }
 
 .gallery {
