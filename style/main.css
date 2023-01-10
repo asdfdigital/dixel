@@ -552,7 +552,7 @@ section.portfolio {
 }
 
 .gallery .img-box img {
-    width: 100%;
+    width: 101%;
     transform: scale(1);
     transition: transform 0.2s ease-in;
 }
