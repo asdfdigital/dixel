@@ -552,12 +552,13 @@ section.portfolio {
 }
 
 .gallery .img-box img {
-    width: 150%;
-    transition: width 0.2s ease-in;
+    width: 100%;
+    transform: scale(1);
+    transition: transform 0.2s ease-in;
 }
 
 .gallery .img-box a:hover img {
-    width: 170%;
+    transform: scale(1.2);
 }
 
 @media (min-width: 768px) {
