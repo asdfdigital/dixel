@@ -82,6 +82,15 @@ a:visited {
     .padding-block-100 {
         padding-block: calc(var(--size-100) + 5px);
     }
+    .padding-block-500 {
+        padding-block: var(--size-100);
+    }
+}
+
+@media (min-width: 1280px) {
+    .padding-block-500 {
+        padding-block: var(--size-500);
+    }
 }
 
 /* styling */
@@ -95,7 +104,7 @@ a:visited {
     .container {
         max-width: 760px;
         margin: auto;
-        padding-inline: 0;
+        padding-inline: 0.2rem;
     }
 }
 
@@ -103,7 +112,7 @@ a:visited {
     .container {
         max-width: 1270px;
         margin: auto;
-        padding-inline: 0;
+        padding-inline: 0.5rem;
     }
 }
 
