@@ -10,6 +10,8 @@ let splash = document.querySelector('.splash');
 let toggleBtn = document.querySelector('.dark-mode-toggle');
 let toggleHandle = document.querySelector('.toggler');
 let animationClass = document.querySelectorAll('.animate')
+let logo = document.querySelectorAll('.logo');
+let menuBtnDualLines = document.querySelector('.menu-btn-wrapper .menu-btn .dual-lines')
 
 window.addEventListener('load', ()=> {
     console.log('done');
@@ -26,8 +28,8 @@ function menuOpen() {
     navMenu.classList.toggle('nav-open');
     yellowLine.classList.toggle('yellow-line-shift');
     body.classList.toggle('overflow-hidden');
+    toggleBtn.classList.toggle('toggle-display')
 }
-
 navLink.forEach(element => {
     element.addEventListener('click', ()=> {
         navMenu.classList.remove('nav-open');
@@ -36,9 +38,32 @@ navLink.forEach(element => {
     })
 });
 
+if (localStorage.getItem('dark-mode', true)) {
+    darkModeFunc();
+}
+
 toggleBtn.addEventListener('click', ()=> {
-    toggleHandle.classList.toggle('toggle-on');
+    darkModeFunc();
 })
+
+function darkModeFunc () {
+    console.log('true');
+    toggleHandle.classList.toggle('toggle-on');
+    document.documentElement.toggleAttribute("data-theme-dark");
+    if (document.documentElement.hasAttribute('data-theme-dark')) {
+        logo.forEach(element => {
+            element.setAttribute('src', 'images/assets/dixel_logo_white.svg');
+        });
+        menuBtnDualLines.setAttribute('src', 'images/assets/dual-lines-white.svg');
+        localStorage.setItem('dark-mode', true);
+    }else {
+        logo.forEach(element => {
+            element.setAttribute('src', 'images/assets/dixel_logo.svg');
+        });
+        menuBtnDualLines.setAttribute('src', 'images/assets/dual-lines.svg');
+        localStorage.removeItem('dark-mode', true);
+    };
+}
 
 seeWorkBtn.addEventListener('click', ()=> {
     portfolio.scrollIntoView();
