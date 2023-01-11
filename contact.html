@@ -7,10 +7,11 @@
     <link rel="shortcut icon" href="images/assets/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="script/main.js" defer></script>
-    <title>Dixel Space | About</title>
+    <title>Dixel Space | Contact</title>
 </head>
 <body>
     <div class="splash">
@@ -48,37 +49,21 @@
             </div>
         </header>
     </div>
-    <section class="about-title">
+    <section class="contact padding-block-200">
         <div class="container">
-            <div class="avatar-wrapper">
-                <div class="avatar">
-                    <img src="images/assets/avatar.webp" alt="">
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" name="" id="name">
+                <label for="email">E-mail</label>
+                <input type="email" name="" id="email">
+                <label for="message">Message</label>
+                <input type="text" name="" id="message">
+                <div class="bottom-row">
+                    <input type="checkbox" name="" id="checkbox">
+                    <label for="checkbox">Agree to the</label><a class="privacy-link">Privacy Policy.</a>
+                    <input type="button" value="send" class="primary-button">
                 </div>
-                <img src="images/assets/circle.svg" alt="" class="circle">
-                <img src="images/assets/dot-circ-1.svg" alt="" class="dot-1">
-                <img src="images/assets/dot-circ-2.svg" alt="" class="dot-2">
-            </div>
-            <div class="main-heading padding-block-200">
-                <h1 class="animate duration-6">Asanka C. Abewickrama</h1>
-            </div>
-        </div>
-    </section>
-    <section class="about-details padding-block-200">
-        <div class="container main-heading">
-            <h3 class="animate duration-9">Graphic / Web Designer</h3>
-            <p>Catching sky point crank working. Whatever based closest people believe pin. Pulling options hiring ditching accountable. Cause beforehand it were create reinvent. Group metal here encourage barn could launch tentative pushback squad.</p>
-        </div>
-        <div class="container main-heading">
-            <h1 class="skills">Skills</h1>
-            <ul>
-                <li>Graphic Designing</li>
-                <li>Web/UI Designing</li>
-                <li>HTML/CSS</li>
-                <li>JavaScript</li>
-            </ul>
-        </div>
-        <div class="container padding-block-100">
-            <a href="/contact.html"><button class="primary-button">Contact</button></a>
+            </form>
         </div>
     </section>
     <footer class="padding-block-100">

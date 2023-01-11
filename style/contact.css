@@ -1,0 +1,61 @@
+.contact {
+    min-height: 90vh;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-grey);
+}
+
+input:not([type="checkbox"]) {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    background-color: var(--color-grey-light);
+    padding-block: calc(var(--size-100) - 10px);
+    margin-bottom: 1rem;
+}
+
+input:not([type="checkbox"]):focus {
+    background-color: var(--color-white);
+}
+
+input[type="button"] {
+    display: inline-block;
+    width: 5rem;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 50vh;
+    justify-self: flex-end;
+}
+
+input#message {
+    height: 7rem;
+}
+
+.privacy-link {
+    color: var(--color-grey);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.privacy-link:hover {
+    color: var(--color-yellow);
+    font-weight: 600;
+}
+
+.bottom-row {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    form {
+        width: 70%;
+    }   
+}

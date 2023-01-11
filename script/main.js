@@ -33,6 +33,7 @@ function menuOpen() {
 navLink.forEach(element => {
     element.addEventListener('click', ()=> {
         navMenu.classList.remove('nav-open');
+        toggleBtn.classList.remove('toggle-display')
         yellowLine.classList.remove('yellow-line-shift');
         body.classList.remove('overflow-hidden');
     })
