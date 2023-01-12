@@ -1,5 +1,5 @@
 .contact {
-    min-height: 90vh;
+    min-height: 85vh;
 }
 
 .contact-title {
@@ -76,6 +76,24 @@ input[type="button"]:hover {
     gap: 2rem;
 }
 
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.social-icons a{
+    transition: transform 0.5s ease-in;
+}
+
+.social-icons a:hover {
+    transform: rotate(10deg);
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
 @media (min-width: 769px) {
     .contact-title {
         text-align: left;
@@ -83,6 +101,10 @@ input[type="button"]:hover {
     .columns-lg {
         display: grid;
         grid-template-columns: 2fr 1fr;
+        gap: 10vw;
+    }
+    .social-icons {
+        justify-content: left;
     }
     
 }
