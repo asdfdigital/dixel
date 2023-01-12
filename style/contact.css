@@ -2,13 +2,20 @@
     min-height: 90vh;
 }
 
+.contact-title {
+    color: var(--color-grey);
+    text-align: center;
+    padding-block: var(--size-100);
+    text-transform: uppercase;
+}
+
 label {
     font-weight: 600;
     font-size: 0.9rem;
     color: var(--color-grey);
 }
 
-input:not([type="checkbox"]) {
+input:not([type="checkbox"]), textarea {
     display: block;
     width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -16,10 +23,12 @@ input:not([type="checkbox"]) {
     background-color: var(--color-grey-light);
     padding-block: calc(var(--size-100) - 10px);
     margin-bottom: 1rem;
+    padding: 5px;
+    color: var(--color-grey);
 }
 
-input:not([type="checkbox"]):focus {
-    background-color: var(--color-white);
+input:not([type="checkbox"]):focus, textarea:focus {
+    outline: 1px solid rgba(255, 187, 0, 0.4);
 }
 
 input[type="button"] {
@@ -30,18 +39,15 @@ input[type="button"] {
     cursor: pointer;
     border-radius: 50vh;
     justify-self: flex-end;
+    color: var(--color-white);
 }
 
-input[type="button"]:focus-within {
+input[type="button"]:hover {
     background-color: var(--color-grey);
 }
 
-input[type="button"]:focus {
-    
-}
-
-input#message {
-    height: 7rem;
+#message {
+    resize: vertical;
 }
 
 .privacy-link {
@@ -64,8 +70,19 @@ input#message {
     flex-wrap: wrap;
 }
 
+.columns-lg {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
 @media (min-width: 769px) {
-    form {
-        width: 70%;
+    .contact-title {
+        text-align: left;
     }   
+    .columns-lg {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    
 }
