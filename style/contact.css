@@ -18,6 +18,7 @@ label {
 input:not([type="checkbox"]), textarea {
     display: block;
     width: 100%;
+    min-height: 2.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 3px;
     background-color: var(--color-grey-light);
@@ -68,6 +69,11 @@ input[type="button"]:hover {
     align-items: center;
     gap: 0.1rem;
     flex-wrap: wrap;
+}
+
+#result {
+    font-weight: 600;
+    color: var(--color-black);
 }
 
 .columns-lg {
