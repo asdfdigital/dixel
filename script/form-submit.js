@@ -1,6 +1,11 @@
-// form validation
+// email copy
 
+const copyBtn = document.querySelector('#copy');
 
+copyBtn.addEventListener('click', ()=> {
+    navigator.clipboard.writeText('contact@dixel.space');
+    copyBtn.textContent = 'copied!';
+})
 
 // form submit
 

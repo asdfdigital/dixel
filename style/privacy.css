@@ -1,0 +1,16 @@
+ul {
+    list-style-type: none;
+}
+
+li p:first-child {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+li p:first-child::before {
+    content: '* ';
+}
+
+.column * {
+    margin-block: 0.5rem;
+}
