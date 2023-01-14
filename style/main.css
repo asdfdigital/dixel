@@ -616,3 +616,43 @@ footer {
         font-size: 1rem;
     }    
 }
+
+
+.cookies-notice {
+    position: fixed;
+    bottom: 8vh;
+    width: 100%;
+    margin: auto;
+    display: none;
+}
+
+.cookies-notice .block {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey-light);
+    padding: var(--size-100);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    color: var(--color-black);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.277);
+
+}
+
+.cookies-notice button {
+    padding: 0.2rem 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.277);
+    border-radius: 50vh;
+    margin-right: 0.5rem;
+    color: var(--color-black);
+    background-color: var(--color-grey-light);
+}
+
+.cookies-notice button:hover {
+    background-color: var(--color-grey);
+    color: var(--color-white);
+}
+
+@media (min-width: 769px) {
+    .cookies-notice .block {
+        width: 60%;
+    }
+}

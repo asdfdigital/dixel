@@ -11,7 +11,10 @@ let toggleBtn = document.querySelector('.dark-mode-toggle');
 let toggleHandle = document.querySelector('.toggler');
 let animationClass = document.querySelectorAll('.animate')
 let logo = document.querySelectorAll('.logo');
-let menuBtnDualLines = document.querySelector('.menu-btn-wrapper .menu-btn .dual-lines')
+let menuBtnDualLines = document.querySelector('.menu-btn-wrapper .menu-btn .dual-lines');
+const acceptBtn = document.querySelector('#accept');
+const backBtn = document.querySelector('#back');
+const cookiesNote = document.querySelector('.cookies-notice')
 
 window.addEventListener('load', ()=> {
     console.log('done');
@@ -19,8 +22,23 @@ window.addEventListener('load', ()=> {
     animationClass.forEach(element => {
         element.classList.add('animation-start');
     });
+    if (localStorage.getItem('cookies', 'accepted')) {
+        cookiesNote.style.display = 'none'; 
+    } else {
+        cookiesNote.style.display = 'block';
+    }
     
 });
+
+acceptBtn.addEventListener('click', ()=> {
+    cookiesNote.style.display = 'none';
+    localStorage.setItem('cookies', 'accepted');
+});
+
+backBtn.addEventListener('click', ()=> {
+    localStorage.clear();
+    history.back();
+})
 
 menuBtn.addEventListener('click', menuOpen);
 
