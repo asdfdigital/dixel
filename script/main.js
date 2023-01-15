@@ -30,6 +30,14 @@ window.addEventListener('load', ()=> {
     
 });
 
+window.addEventListener('scroll', (element)=> {
+    if (window.scrollY > 350) {
+        header.classList.add('position-fixed');
+    }else {
+        header.classList.remove('position-fixed');
+    }
+})
+
 acceptBtn.addEventListener('click', ()=> {
     cookiesNote.style.display = 'none';
     localStorage.setItem('cookies', 'accepted');
@@ -88,13 +96,7 @@ seeWorkBtn.addEventListener('click', ()=> {
     portfolio.scrollIntoView();
 })
 
-window.addEventListener('scroll', (e)=> {
-    if (e.path[1].pageYOffset > 400) {
-        header.classList.add('position-fixed');
-    }else {
-        header.classList.remove('position-fixed');
-    }
-})
+
 
 // const observer = new IntersectionObserver(entries => {
 //     entries.forEach(entry => {
