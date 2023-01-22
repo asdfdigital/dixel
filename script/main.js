@@ -82,3 +82,11 @@ navLink.forEach(element => {
 document.querySelector('.primary-button').addEventListener('click', ()=> {
     document.querySelector('#portfolio').scrollIntoView();
 })
+
+// gallery
+
+let gallery = new SimpleLightbox('.gallery a', {
+    loop: false,
+    disableRightClick: true,
+    maxZoom: 3
+});
