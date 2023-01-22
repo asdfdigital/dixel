@@ -21,6 +21,7 @@ html {
 
 body {
     overflow-x: hidden;
+    position: relative;
 }
 
 * {
@@ -325,12 +326,12 @@ section {
 
 .portfolio {
     background-color: var(--color-grey-light);
-    scroll-margin: 10vh;
 }
 
 .gallery {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding-block: 10vh;
 }
 
 .gallery .img-box {
@@ -355,12 +356,22 @@ section {
 }
 
 footer {
-    padding-block: var(--size-200);
+    padding-block: var(--size-100);
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.1rem;
     color: var(--color-black);
+    background-color: var(--color-grey-light);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: clamp(0.8rem, 1vw, 3rem);
+    padding-bottom: 1vh;
 }
 
 @media (min-width: 769px) {
