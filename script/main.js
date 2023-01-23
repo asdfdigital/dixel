@@ -64,6 +64,7 @@ function darkModeFunc () {
     };
 }
 
+
 // primary button
 
 document.querySelector('.primary-button').addEventListener('click', ()=> {
