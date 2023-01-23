@@ -16,11 +16,12 @@
 }
 
 [data-theme-dark] {
-    --color-grey: #ffffff;
-    --color-grey-light: #313131;
+    --color-grey: #818181;
+    --color-grey-yellowish: #535353;
+    --color-grey-light: #363636;
     --color-yellow: #FFBD00;
-    --color-black: #b1b1b1;
-    --color-white: #272727;
+    --color-black: rgb(255, 255, 255);
+    --color-white: rgb(32, 32, 32);
 }
 
 html {
@@ -271,6 +272,7 @@ section {
 
 .main-heading h3 {
     font-size: clamp(1rem, 4vw, 3rem);
+    color: var(--color-black);
 }
 
 .primary-button-wrapper {
@@ -312,6 +314,7 @@ section {
     font-size: clamp(1rem, 1.3vw, 2.5rem);
     transition: color 0.3s ease-out;
     margin: 2px 5px;
+    color: var(--color-black);
 }
 
 .primary-button:hover {
@@ -362,6 +365,16 @@ section {
 
 .gallery .img-box a:hover img {
     transform: scale(1.2);
+}
+
+/* carrosel */
+
+.sl-wrapper {
+    background: rgba(0, 0, 0, 0.601);
+}
+
+.sl-wrapper .sl-close {
+    color: white;
 }
 
 footer {
