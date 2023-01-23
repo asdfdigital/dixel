@@ -1,8 +1,16 @@
-<svg width="137" height="23" viewBox="0 0 137 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M34.8863 0H32.0986V22.9987H34.8863V0Z" fill="white"/>
-<path d="M82.1213 12.9066H104.901V10.0921H84.909V2.81447H104.901V0.00131579H82.1213V12.9066Z" fill="white"/>
-<path d="M104.901 20.1855H82.1213V23H104.901V20.1855Z" fill="white"/>
-<path d="M134.214 14.4855V20.1855H117.008V0H114.22V22.9987H137V14.4855H134.214Z" fill="white"/>
-<path d="M67.922 0.00131579L58.5045 9.51184L49.0843 0.00131579H45.1419L56.5326 11.5L45.1419 23H49.0817L58.5045 13.4882L67.9259 23H71.8644L60.475 11.5L71.8644 0.00131579H67.922Z" fill="#FFBD00"/>
-<path d="M16.5648 0H0V2.81447H16.5648C18.4545 2.81447 19.9937 4.36711 19.9937 6.27632V16.725C19.9937 18.6342 18.4558 20.1868 16.5648 20.1868H2.78773V10.0947H0V23H16.5648C19.9924 23 22.7801 20.1855 22.7801 16.725V6.275C22.7801 2.81447 19.9924 0 16.5648 0Z" fill="white"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 137 23" style="enable-background:new 0 0 137 23;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#FFBD00;}
+</style>
+<path class="st0" d="M34.9,0h-2.8v23h2.8V0z"/>
+<path class="st0" d="M82.1,12.9h22.8v-2.8h-20V2.8h20V0H82.1V12.9z"/>
+<path class="st0" d="M104.9,20.2H82.1V23h22.8V20.2z"/>
+<path class="st0" d="M134.2,14.5v5.7H117V0h-2.8v23H137v-8.5H134.2z"/>
+<path class="st1" d="M67.9,0l-9.4,9.5L49.1,0h-3.9l11.4,11.5L45.1,23h3.9l9.4-9.5l9.4,9.5h3.9L60.5,11.5L71.9,0H67.9z"/>
+<path class="st0" d="M16.6,0H0v2.8h16.6c1.9,0,3.4,1.6,3.4,3.5v10.4c0,1.9-1.5,3.5-3.4,3.5H2.8V2.1H0V23h16.6c3.4,0,6.2-2.8,6.2-6.3
+	V6.3C22.8,2.8,20,0,16.6,0z"/>
 </svg>
