@@ -275,6 +275,8 @@ section {
     color: var(--color-black);
 }
 
+/* primary button */
+
 .primary-button-wrapper {
     border-radius: 50vh;
     position: relative;
