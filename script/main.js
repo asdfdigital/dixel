@@ -78,3 +78,4 @@ let gallery = new SimpleLightbox('.gallery a', {
     disableRightClick: true,
     maxZoom: 3
 });
+

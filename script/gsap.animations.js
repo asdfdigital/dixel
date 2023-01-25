@@ -27,6 +27,13 @@ tl.from(".t3", {duration: 0.3, y: -20, opacity: 0, ease: "slow(0.7, 0.7, false)"
 tl.from(".r4", {duration: 0.3, x: 30, opacity: 0});
 tl.from(".avatar-wrapper", {duration: 0.5, x: 30, opacity: 0, ease: "slow(0.7, 0.7, false)"})
 
+tl.pause()
+
+
+window.addEventListener("load", ()=> {
+  document.querySelector('.main-heading').style.opacity = '1'
+})
+
 
 const op = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {

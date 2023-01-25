@@ -256,6 +256,7 @@ section {
 
 .main-heading {
     text-transform: uppercase;
+    opacity: 0;
 }
 
 .main-heading h1 {
