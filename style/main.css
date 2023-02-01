@@ -24,6 +24,10 @@
     --color-white: rgb(32, 32, 32);
 }
 
+.ani_pause {
+    opacity: 0;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -265,7 +269,6 @@ section {
 
 .main-heading {
     text-transform: uppercase;
-    opacity: 0;
 }
 
 .main-heading h1 {

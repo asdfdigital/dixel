@@ -19,7 +19,7 @@ document.querySelector('.menu-btn').addEventListener('click', ()=> {
 }) 
 
 
-let tl = gsap.timeline({repeatDelay: 0.1, delay: 0.2});
+let tl = gsap.timeline({repeatDelay: 0.5, delay: 0.5});
 
 tl.from(".t1", {duration: 0.3, y: -20, opacity: 0});
 tl.from(".t2", {duration: 0.3, y: -20, opacity: 0,});
@@ -27,26 +27,26 @@ tl.from(".t3", {duration: 0.3, y: -20, opacity: 0, ease: "slow(0.7, 0.7, false)"
 tl.from(".r4", {duration: 0.3, x: 30, opacity: 0});
 tl.from(".avatar-wrapper", {duration: 0.5, x: 30, opacity: 0, ease: "slow(0.7, 0.7, false)"})
 
-tl.pause()
+tl.play()
 
 
 window.addEventListener("load", ()=> {
-  document.querySelector('.main-heading').style.opacity = '1'
+  document.querySelector('.ani_pause').style.opacity = '1'
 })
 
 
-const op = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.intersectionRatio > 0) {
-      tl.play()
-    } 
-  })
-})
+// const op = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
+//     if (entry.intersectionRatio > 0) {
+//       tl.play()
+//     } 
+//   })
+// })
 
-const aniObser = document.querySelectorAll('.aniObser');
-aniObser.forEach((el) => {
-  op.observe(el);
-})
+// const aniObser = document.querySelectorAll('.aniObser');
+// aniObser.forEach((el) => {
+//   op.observe(el);
+// })
 
 
     
