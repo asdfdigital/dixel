@@ -1,0 +1,65 @@
+section.about {
+    padding-top: 10vh;
+    color: var(--color-black);
+}
+
+section.about .columns-lg {
+    min-height: fit-content;
+}
+
+footer {
+    margin-bottom: -10vh;
+}
+
+.bio {
+    padding-block: var(--size-100);
+}
+
+.about h4 {
+    padding-block: var(--size-100);
+    text-transform: uppercase;
+    font-size: clamp(1rem, 4vw, 2rem);
+}
+
+.about p {
+    font-size: clamp(1rem, 1.8vw, 1.6rem);
+}
+
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile img {
+    width: 30%;
+}
+
+.skills h4 {
+    grid-column: 1 / 3;
+}
+
+.skills ul {
+    padding-inline: 0 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: clamp(0.2rem, 0.5vw, 2rem);
+    list-style-type: none;
+}
+
+.skills ul li {
+    white-space: nowrap;
+    font-size: clamp(0.8rem, 2vw, 1.4rem);
+    line-height: clamp(1.7rem, 2vw, 2rem);
+    font-weight: lighter;
+    padding: 1vw;
+    border: 1px solid var(--color-grey);
+    border-radius: 100vh;
+    background-color: var(--color-grey-light);
+}
+
+.skills ul li::before {
+    content: url(../images/assets/arrow.svg);
+    display: inline-block;
+    transform: rotate(225deg) scale(0.7);
+}
