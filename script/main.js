@@ -1,69 +1,41 @@
-let menuBtn = document.querySelector('.menu-btn');
-let navMenu = document.querySelector('nav');
-let yellowLine = document.querySelector('.yellow-line');
-let navLink = document.querySelectorAll('nav ul li a');
-let header = document.querySelector('header');
-let body = document.querySelector('body');
-let seeWorkBtn = document.querySelector('#seeWorkBtn');
-let portfolio = document.querySelector('.portfolio')
-let splash = document.querySelector('.splash');
+const menuBtn = document.querySelector('.menu-btn');
+const navMenu = document.querySelector('nav');
+const yellowLine = document.querySelector('.yellow-line');
+const navLink = document.querySelectorAll('nav ul li a');
+
+const body = document.querySelector('body');
+
 let toggleBtn = document.querySelector('.dark-mode-toggle');
 let toggleHandle = document.querySelector('.toggler');
-let animationClass = document.querySelectorAll('.animate')
 let logo = document.querySelectorAll('.logo');
 let menuBtnDualLines = document.querySelector('.menu-btn-wrapper .menu-btn .dual-lines');
-const acceptBtn = document.querySelector('#accept');
-const backBtn = document.querySelector('#back');
-const cookiesNote = document.querySelector('.cookies-notice')
 
-window.addEventListener('load', ()=> {
-    console.log('done');
-    splash.style.display = 'none';
-    animationClass.forEach(element => {
-        element.classList.add('animation-start');
-    });
-    if (localStorage.getItem('cookies', 'accepted')) {
-        cookiesNote.style.display = 'none'; 
+// navbar fixed
+
+window.addEventListener('scroll', ()=> {
+    if (window.scrollY > 220) {
+        document.querySelector('header').classList.add('header-fixed')  
     } else {
-        cookiesNote.style.display = 'block';
-    }
-    
-});
-
-window.addEventListener('scroll', (element)=> {
-    if (window.scrollY > 350) {
-        header.classList.add('position-fixed');
-    }else {
-        header.classList.remove('position-fixed');
+        document.querySelector('header').classList.remove('header-fixed') 
     }
 })
 
-acceptBtn.addEventListener('click', ()=> {
-    cookiesNote.style.display = 'none';
-    localStorage.setItem('cookies', 'accepted');
-});
-
-backBtn.addEventListener('click', ()=> {
-    localStorage.clear();
-    history.back();
-})
+// menu
 
 menuBtn.addEventListener('click', menuOpen);
 
 function menuOpen() {
     navMenu.classList.toggle('nav-open');
     yellowLine.classList.toggle('yellow-line-shift');
-    body.classList.toggle('overflow-hidden');
-    toggleBtn.classList.toggle('toggle-display')
 }
 navLink.forEach(element => {
     element.addEventListener('click', ()=> {
         navMenu.classList.remove('nav-open');
-        toggleBtn.classList.remove('toggle-display')
         yellowLine.classList.remove('yellow-line-shift');
-        body.classList.remove('overflow-hidden');
     })
-});
+})
+
+// dark mode
 
 if (localStorage.getItem('dark-mode', true)) {
     darkModeFunc();
@@ -92,26 +64,18 @@ function darkModeFunc () {
     };
 }
 
-seeWorkBtn.addEventListener('click', ()=> {
-    portfolio.scrollIntoView();
+
+// primary button
+
+document.querySelector('.primary-button').addEventListener('click', ()=> {
+    document.querySelector('#portfolio').scrollIntoView();
 })
 
-
-
-// const observer = new IntersectionObserver(entries => {
-//     entries.forEach(entry => {
-//         console.log('observed')
-//     });
-//   })
-
-// observer.observe(document.querySelector('.animate'))
-
-
-
-
+// gallery
 
 let gallery = new SimpleLightbox('.gallery a', {
     loop: false,
     disableRightClick: true,
     maxZoom: 3
 });
+

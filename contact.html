@@ -4,57 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="If you have a web design or graphic design project that needs to be done, let's discuss.">
     <link rel="shortcut icon" href="images/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="lightbox/simple-lightbox.min.css">
+    <script src="lightbox/simple-lightbox.min.js" defer></script>
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/contact.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
-    
     <script src="script/main.js" defer></script>
-    <script src="script/form-submit.js" defer></script>
-    <title>Dixel Space | Contact</title>
+    <script src="script/form-submit.js" async></script>
+    <script src="script/gsap.min.js"></script>
+    <script src="script/gsap.animations.js" defer></script>
+    <title>Dixel</title>
 </head>
 <body>
-    <div class="splash">
-        <img src="images/assets/dixel_logo.svg" alt="" class="logo">
-        <div class="loadingio-spinner-rolling-sb2dbdau45"><div class="ldio-a0a8yqqa9k4">
-            <div></div>
-            </div></div>
-    </div>
-    <div class="container">
-        <header class="padding-block-100">
-            <div class="header-container">
+    <header>
+        <div class="container">
+            <div class="navbar">
                 <div class="logo-wrapper">
                     <a href="/"><img src="images/assets/dixel_logo.svg" alt="logo" class="logo"></a>
                 </div>
+                <nav class="nav">
+                    <div class="container">
+                        <ul>
+                            <li class="n1"><a href="/">Home</a></li>
+                            <li class="n2"><a href="#portfolio">Portfolio</a></li>
+                            <li class="n3"><a href="about.html">About</a></li>
+                            <li class="n4"><a href="contact.html">Contact</a></li>
+                            <li>
+                                <div class="dark-mode-toggle">
+                                    <div class="outline"><div class="toggler"></div></div>
+                                    <b>Dark Mode</b>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="gradiel"></div>
+                </nav>
+                
                 <div class="menu-btn-wrapper">
                     <button class="menu-btn">
                         <img src="images/assets/dual-lines.svg" alt="" class="dual-lines">
                         <img src="images/assets/yellow-line.svg" alt="" class="yellow-line">
                     </button>
                 </div>
-                <nav class="padding-inline-200">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/#portfolio">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="dark-mode-toggle">
-                    <b>Dark Mode</b>
-                    <div class="outline">
-                        <div class="toggler"></div>
-                    </div>
-                </div>
             </div>
-        </header>
-    </div>
-    <section class="contact padding-block-200">
+        </div>
+    </header>
+    <section class="contact">
         <div class="container">
-            <div class="columns-lg">
-                <div class="column">
+            <div class="single-column">
+                <div class="form-container">
                     <h1 class="contact-title">Say Hello!</h1>
 
                     <form action="https://api.web3forms.com/submit" method="POST" id="form">
@@ -66,46 +67,49 @@
                         <input type="email" name="email" id="email" required>
                         <label for="message">Message</label>
                         <textarea rows="5" name="message" id="message" minlength="5" required></textarea>
+                        <label for="e-mail">
+                            <small>(We do not use your e-mail address for marketing purposes.)</small>
+                        </label>
+                        
                         <div class="bottom-row">
-                            <div>
-                                <input type="checkbox" name="privacy" id="checkbox" required>
-                                <label for="checkbox">Agree to the&nbsp;</label><a href="/privacy-policy.html" class="privacy-link">Privacy Policy.</a>
-                            </div>
-                            <button class="primary-button" type="submit">send</button>
+                            <button class="send-button" type="submit">Send →</button>
                         </div>
+
                         <div id="result"></div>
                     </form>
             
                 </div>
-                <div class="column">
+                <div>
                     <h1 class="contact-title">Follow Me!</h1>
                     <div class="social-icons">
-                        <a href="http://instagram.com " target="_blank"><img src="images/assets/insta.svg" alt="facebook"></a>
-                        <a href="http://dribbble.com " target="_blank"><img src="images/assets/dribbble.svg" alt="facebook"></a>
-                        <a href="http://fb.com " target="_blank"><img src="images/assets/fb.svg" alt="facebook"></a>
+                        <a href="http://instagram.com/dixelseven" target="_blank">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8.41 0H20.59C25.23 0 29 3.77 29 8.41V20.59C29 22.8205 28.114 24.9596 26.5368 26.5368C24.9596 28.114 22.8205 29 20.59 29H8.41C3.77 29 0 25.23 0 20.59V8.41C0 6.17953 0.886051 4.04041 2.46323 2.46323C4.04041 0.886051 6.17953 0 8.41 0ZM8.12 2.9C6.73557 2.9 5.40784 3.44996 4.4289 4.4289C3.44996 5.40784 2.9 6.73557 2.9 8.12V20.88C2.9 23.7655 5.2345 26.1 8.12 26.1H20.88C22.2644 26.1 23.5922 25.55 24.5711 24.5711C25.55 23.5922 26.1 22.2644 26.1 20.88V8.12C26.1 5.2345 23.7655 2.9 20.88 2.9H8.12ZM22.1125 5.075C22.5932 5.075 23.0542 5.26596 23.3941 5.60587C23.734 5.94578 23.925 6.4068 23.925 6.8875C23.925 7.36821 23.734 7.82922 23.3941 8.16913C23.0542 8.50904 22.5932 8.7 22.1125 8.7C21.6318 8.7 21.1708 8.50904 20.8309 8.16913C20.491 7.82922 20.3 7.36821 20.3 6.8875C20.3 6.4068 20.491 5.94578 20.8309 5.60587C21.1708 5.26596 21.6318 5.075 22.1125 5.075ZM14.5 7.25C16.4228 7.25 18.2669 8.01384 19.6265 9.37348C20.9862 10.7331 21.75 12.5772 21.75 14.5C21.75 16.4228 20.9862 18.2669 19.6265 19.6265C18.2669 20.9862 16.4228 21.75 14.5 21.75C12.5772 21.75 10.7331 20.9862 9.37348 19.6265C8.01384 18.2669 7.25 16.4228 7.25 14.5C7.25 12.5772 8.01384 10.7331 9.37348 9.37348C10.7331 8.01384 12.5772 7.25 14.5 7.25ZM14.5 10.15C13.3463 10.15 12.2399 10.6083 11.4241 11.4241C10.6083 12.2399 10.15 13.3463 10.15 14.5C10.15 15.6537 10.6083 16.7601 11.4241 17.5759C12.2399 18.3917 13.3463 18.85 14.5 18.85C15.6537 18.85 16.7601 18.3917 17.5759 17.5759C18.3917 16.7601 18.85 15.6537 18.85 14.5C18.85 13.3463 18.3917 12.2399 17.5759 11.4241C16.7601 10.6083 15.6537 10.15 14.5 10.15Z"/>
+                            </svg></a>
+                        <a href="http://dribbble.com/asdfdigital" target="_blank">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29 14.6045V14.5069C28.9986 12.3541 28.5188 10.2285 27.5953 8.28407C26.6718 6.33963 25.3278 4.62496 23.6605 3.2642L23.5768 3.19446L23.4792 3.12472C21.3507 1.44184 18.793 0.390208 16.0968 0.0893787C13.4006 -0.211451 10.6742 0.250587 8.22739 1.42297L8.04615 1.52061C6.06821 2.50782 4.34098 3.9328 2.9955 5.68744C1.65002 7.44207 0.721651 9.48028 0.280816 11.6474V11.6753C-0.255033 14.3557 -0.0208438 17.1331 0.956249 19.6857C1.93334 22.2384 3.61334 24.4618 5.80159 26.0983L5.98283 26.2378H5.99677C7.88983 27.6111 10.0868 28.5059 12.4002 28.846C14.7137 29.186 17.075 28.9612 19.2829 28.1906L19.4362 28.1348C22.2139 27.1248 24.6175 25.291 26.3263 22.8785C28.0352 20.4659 28.9679 17.5892 29 14.6324V14.6045ZM26.7136 13.4189L25.6541 13.391C23.5875 13.3927 21.53 13.6647 19.5338 14.2C19.0446 12.7559 18.4142 11.3636 17.6517 10.0433C19.6361 8.84715 21.4311 7.36153 22.9773 5.63549C25.128 7.68856 26.4564 10.4559 26.7136 13.4189ZM21.2347 4.25457C19.842 5.78536 18.2306 7.1015 16.4528 8.16022C14.9601 6.06697 13.138 4.22979 11.0575 2.7202C12.7638 2.22417 14.5574 2.10448 16.3145 2.36938C18.0715 2.63428 19.7502 3.27747 21.2347 4.25457ZM8.58986 3.75241C10.8746 5.18682 12.8664 7.04233 14.4592 9.22032C11.6722 10.4963 8.64345 11.1575 5.57853 11.1592C4.63187 11.1571 3.68641 11.0919 2.74844 10.9639C3.68373 7.89127 5.77918 5.30435 8.58986 3.75241ZM2.2326 14.5069C2.2326 14.0466 2.26049 13.6002 2.30231 13.1678C3.38851 13.312 4.48282 13.3866 5.57853 13.391C9.07646 13.396 12.5308 12.6142 15.686 11.1034C16.3812 12.3036 16.9556 13.5698 17.4008 14.8835C16.218 15.3345 15.0714 15.8754 13.9712 16.5016C10.9138 18.2727 8.29331 20.7086 6.30348 23.6294C5.02294 22.4799 3.99866 21.0735 3.29728 19.5018C2.5959 17.9301 2.23314 16.2282 2.2326 14.5069ZM8.08797 24.9685C10.5042 21.3695 13.9702 18.603 18.0142 17.0456C18.354 18.58 18.5269 20.1467 18.53 21.7184C18.5293 23.2426 18.3658 24.7624 18.0421 26.2517C16.8952 26.6062 15.7013 26.7849 14.501 26.7818C12.237 26.781 10.0175 26.1534 8.08797 24.9685ZM20.5097 25.2056C20.6775 24.0508 20.7613 22.8853 20.7607 21.7184C20.7595 19.9109 20.5537 18.1093 20.1472 16.3481C21.9437 15.8688 23.7948 15.625 25.6541 15.6228L26.7136 15.6507C26.5273 17.6261 25.8657 19.5271 24.7854 21.191C23.705 22.8549 22.238 24.2324 20.5097 25.2056Z"/>
+                            </svg></a>
+                        <a href="http://fb.com/dixel7" target="_blank">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M29 14.5C29 11.6322 28.1496 8.82875 26.5563 6.44424C24.963 4.05972 22.6984 2.20122 20.0489 1.10375C17.3994 0.00628262 14.4839 -0.280866 11.6712 0.27862C8.85847 0.838105 6.27482 2.2191 4.24696 4.24696C2.2191 6.27482 0.838105 8.85847 0.27862 11.6712C-0.280866 14.4839 0.00628262 17.3994 1.10375 20.0489C2.20122 22.6984 4.05972 24.963 6.44424 26.5563C8.82875 28.1496 11.6322 29 14.5 29C18.3445 28.9963 22.0305 27.4674 24.749 24.749C27.4674 22.0305 28.9963 18.3445 29 14.5ZM15.6154 26.7135V17.8462H18.9615C19.2574 17.8462 19.5411 17.7286 19.7502 17.5195C19.9594 17.3103 20.0769 17.0266 20.0769 16.7308C20.0769 16.435 19.9594 16.1513 19.7502 15.9421C19.5411 15.7329 19.2574 15.6154 18.9615 15.6154H15.6154V12.2692C15.6154 11.6776 15.8504 11.1102 16.2688 10.6918C16.6871 10.2735 17.2545 10.0385 17.8462 10.0385H20.0769C20.3727 10.0385 20.6564 9.92095 20.8656 9.71178C21.0748 9.5026 21.1923 9.2189 21.1923 8.92308C21.1923 8.62726 21.0748 8.34356 20.8656 8.13439C20.6564 7.92521 20.3727 7.8077 20.0769 7.8077H17.8462C16.664 7.81137 15.5313 8.28261 14.6954 9.11851C13.8595 9.95442 13.3883 11.0871 13.3846 12.2692V15.6154H10.0385C9.74265 15.6154 9.45895 15.7329 9.24977 15.9421C9.0406 16.1513 8.92308 16.435 8.92308 16.7308C8.92308 17.0266 9.0406 17.3103 9.24977 17.5195C9.45895 17.7286 9.74265 17.8462 10.0385 17.8462H13.3846V26.7135C10.2403 26.4264 7.32775 24.9383 5.25268 22.5586C3.17761 20.1789 2.09982 17.0908 2.24348 13.9368C2.38715 10.7827 3.74121 7.8054 6.02402 5.6242C8.30684 3.443 11.3427 2.22581 14.5 2.22581C17.6574 2.22581 20.6932 3.443 22.976 5.6242C25.2588 7.8054 26.6129 10.7827 26.7565 13.9368C26.9002 17.0908 25.8224 20.1789 23.7473 22.5586C21.6723 24.9383 18.7597 26.4264 15.6154 26.7135Z"/>
+                            </svg></a>
                     </div>
                     <br>
                     <hr style="opacity: 0.1;"><br>
-                    <p><a href="mailto:contact@dixel.space" target="_blank"><small>contact@dixel.space</small></a><button id="copy"><small>Copy</small> </button></p>
-                    <p><a href="https://www.fiverr.com/dixel_7" class="privacy-link" target="_blank"><small>Fiverr →</small></a></p>
+                    <p><a href="mailto:contact@dixel.space" target="_blank">contact@dixel.space</a><button id="copy"><small>Copy</small> </button></p>
+                    <p><a href="https://www.fiverr.com/dixel_7" target="_blank">Fiverr →</a></p>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="padding-block-100">
+    
+    <footer>
         <div class="container">
             <p class="footer-text">
                 &copy; 2023. All Rights Reserved.
             </p>
         </div>
     </footer>
-    <div class="cookies-notice">
-        <div class="container">
-            <div class="block">
-                <p style="padding-bottom: 0.3rem;">In order to provide you with a great experience on this site we provide the functionality to set your preferences for how this site runs when you use it. In order to remember your preferences we need to set cookies so that this information can be called whenever you interact with a page is affected by your preferences.</p>
-                <button id="accept">Accept</button><button id="back">Reject and Back</button>
-            </div>
-        </div>
-    </div>
 </body>
 </html>

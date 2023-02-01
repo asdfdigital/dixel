@@ -4,74 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I'm a web designer who creates engaging and intuitive websites. I'm passionate about making sure that every website I design is user-friendly and visually appealing. I take pride in my work and strive to create the highest quality websites for my clients. My expertise includes UI/UX design, HTML/CSS coding, and graphic design. I'm confident I can create a website that meets your needs and exceeds your expectations.">
     <link rel="shortcut icon" href="images/assets/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="script/main.js" defer></script>
-    <script src="lightbox/simple-lightbox.min.js"></script>
     <link rel="stylesheet" href="lightbox/simple-lightbox.min.css">
-    <title>Dixel Space</title>
+    <script src="lightbox/simple-lightbox.min.js" defer></script>
+    <link rel="stylesheet" href="style/main.css">
+    <script src="script/main.js" defer></script>
+    <script src="script/gsap.min.js"></script>
+    <script src="script/gsap.animations.js" defer></script>
+    <title>Dixel</title>
 </head>
 <body>
-    <div class="splash">
-        <img src="images/assets/dixel_logo.svg" alt="" class="logo">
-        <div class="loadingio-spinner-rolling-sb2dbdau45"><div class="ldio-a0a8yqqa9k4">
-            <div></div>
-            </div></div>
-    </div>
-    <div class="container">
-        <header class="padding-block-100">
-            <div class="header-container">
+    <header>
+        <div class="container">
+            <div class="navbar">
                 <div class="logo-wrapper">
                     <a href="/"><img src="images/assets/dixel_logo.svg" alt="logo" class="logo"></a>
                 </div>
+                <nav class="nav">
+                    <div class="container">
+                        <ul>
+                            <li class="n1"><a href="/">Home</a></li>
+                            <li class="n2"><a href="#portfolio">Portfolio</a></li>
+                            <li class="n3"><a href="about.html">About</a></li>
+                            <li class="n4"><a href="contact.html">Contact</a></li>
+                            <li>
+                                <div class="dark-mode-toggle">
+                                    <div class="outline"><div class="toggler"></div></div>
+                                    <b>Dark Mode</b>
+                                </div>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="gradiel"></div>
+                </nav>
+                
                 <div class="menu-btn-wrapper">
                     <button class="menu-btn">
                         <img src="images/assets/dual-lines.svg" alt="" class="dual-lines">
                         <img src="images/assets/yellow-line.svg" alt="" class="yellow-line">
                     </button>
                 </div>
-                <nav class="padding-inline-200">
-                    <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="dark-mode-toggle">
-                    <b>Dark Mode</b>
-                    <div class="outline">
-                        <div class="toggler"></div>
+            </div>
+        </div>
+    </header>
+    <section class="hero aniObser">
+        <div class="container">
+            <div class="columns-lg">
+                <div class="column">
+                    <div class="avatar-wrapper">
+                        <img src="images/assets/avatar.png" alt="" class="avatar" width="100%">
+                        <!-- <img src="images/assets/circle.svg" alt="" class="circle">
+                        <img src="images/assets/dot-circ-1.svg" alt="" class="dot-1">
+                        <img src="images/assets/dot-circ-2.svg" alt="" class="dot-2"> -->
                     </div>
                 </div>
-            </div>
-        </header>
-    </div>
-    <section class="main padding-block-500">
-        <div class="container">
-            <div class="avatar-wrapper">
-                <img src="images/assets/avatar.webp" alt="" class="avatar">
-                <img src="images/assets/circle.svg" alt="" class="circle">
-                <img src="images/assets/dot-circ-1.svg" alt="" class="dot-1">
-                <img src="images/assets/dot-circ-2.svg" alt="" class="dot-2">
-            </div>
-        
-            <div class="main-heading padding-block-200">
-                <h3 class="animate duration-3">Hello!</h3>
-                <h1 class="animate duration-6">I’m Asanka.</h1>
-                <h3 class="animate duration-9">Graphic / Web Designer</h3>
-                <br>
-                <button class="primary-button" id="seeWorkBtn">See My Work</button>
-            </div>
-            <div class="arrow-wrapper">
-                <img src="images/assets/dotted-line.svg" alt="" class="dotted-line">
-                <img src="images/assets/Arrow.svg" alt="" class="arrow">
+                <div class="column">
+                    <div class="main-heading">
+                        <h3 class="t1">Hello!</h3>
+                        <h1 class="t2">I’m Asanka.</h1>
+                        <div class="title-wrapper t3">
+                            <h3 class="gr">Graphic Designer</h3>
+                            <h3 class="wb">Web Developer</h3>
+                        </div>
+                        <br>
+                        <div class="primary-button-wrapper r4">
+                            <button class="primary-button" id="primary-button">See My Work</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-wrapper">
+                    <a href="#portfolio"><img src="images/assets/dotted-line.svg" alt="" class="dotted-line"><img src="images/assets/arrow.svg" alt="" class="arrow"></a>
+                    
+                    
+                </div>
             </div>
         </div>
     </section>
-    <section class="portfolio padding-block-200" id="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="container">
             <div class="gallery">
                 <div class="img-box">
@@ -96,7 +108,7 @@
                     <a href="images/007.jpg"><img src="images/007.jpg" alt="" title=""/></a>
                 </div>
                 <div class="img-box">
-                    <a href="images/008.jpg"><img src="images/008.jpg" alt="" title=""/></a>
+                    <a href="images/008.jpg"><img src="images/008_thumb.jpg" alt="" title=""/></a>
                 </div>
                 <div class="img-box">
                     <a href="images/009.jpg"><img src="images/009.jpg" alt="" title=""/></a>
@@ -112,21 +124,14 @@
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <footer class="padding-block-100">
+    <footer>
         <div class="container">
             <p class="footer-text">
                 &copy; 2023. All Rights Reserved.
             </p>
         </div>
     </footer>
-    <div class="cookies-notice">
-        <div class="container">
-            <div class="block">
-                <p style="padding-bottom: 0.3rem;">In order to provide you with a great experience on this site we provide the functionality to set your preferences for how this site runs when you use it. In order to remember your preferences we need to set cookies so that this information can be called whenever you interact with a page is affected by your preferences.</p>
-                <button id="accept">Accept</button><button id="back">Reject and Back</button>
-            </div>
-        </div>
-    </div>
 </body>
 </html>
