@@ -22,7 +22,7 @@ footer {
 }
 
 .about p {
-    font-size: clamp(1rem, 1.8vw, 1.6rem);
+    font-size: clamp(0.9rem, 1.5vw, 1.5rem);
 }
 
 .profile {
